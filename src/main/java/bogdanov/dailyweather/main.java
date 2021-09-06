@@ -1,17 +1,9 @@
 package bogdanov.dailyweather;
 
-
-//"https://api.openweathermap.org/data/2.5/onecall
-//        ?lat=59.57&lon=30.19
-//        &exclude=current,minutely,hourly,alerts
-//        &units=metric
-//        &appid=c17015e5a65898870b092e014f43434a"
-
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.Period;
 import java.util.Comparator;
 import java.util.Map;
 

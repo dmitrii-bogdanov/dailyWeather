@@ -1,13 +1,8 @@
 package bogdanov.dailyweather;
 
 import bogdanov.dailyweather.dto.WeatherDTO;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
 import java.net.URL;
