@@ -28,17 +28,6 @@ public class main {
             actual = reader.getActualTempAtNight();
             feelsLike = reader.getFeelsLikeTempAtNight();
 
-            for (LocalDate d : sunrise.keySet()) {
-                System.out.println(d + " : " + sunrise.get(d) + " : " + sunset.get(d));
-                System.out.println(d + " : " + Duration.between(sunrise.get(d), sunset.get(d)));
-            }
-            for (LocalDate d : actual.keySet()) {
-                System.out.println(d + " : " + actual.get(d) + " : " + feelsLike.get(d));
-                System.out.println(d + " : " + Math.abs(actual.get(d) - feelsLike.get(d)));
-            }
-
-            System.out.println("\n\n");
-
             Comparator<LocalDate> tempComparator = new Comparator<LocalDate>() {
                 @Override
                 public int compare(LocalDate d1, LocalDate d2) {
